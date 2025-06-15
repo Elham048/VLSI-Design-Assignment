@@ -1,0 +1,4 @@
+main:
+	iverilog -o out4 temp_top.v temp_top_tb.sv temp_controller.v temp_datapath.v
+	vvp out4
+	gtkwave test3.vcd &
